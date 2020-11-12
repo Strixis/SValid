@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --heading-color: #344e78; /*Цвет текста для заголовков*/
+    --text-color: #545455; /*Цвет для основного текста*/
+    --button-color: #9c4e57; /*Цвет текста для кнопки*/
+    --main-font-family: Georgia; /*Основное семейство шрифтов*/
+}
+
+.wrapper-site {
+    font-family: var(--main-font-family);
+    font-style: italic;
+    background: ghostwhite;
+    min-height: 100vh;
+}
+
+.wrapper-form {
+    background: url(../img/mail-bg.png) no-repeat, url(../img/mail-bg-2.png) no-repeat, url(../img/bg.jpg) no-repeat;
+    background-size: auto, auto, cover;
+    background-position: 50% 50%, 80% 20%;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.wrapper-form_content {
+    display: flex;
+}
+
+.adress {
+    width: 240px;
+    margin-right: 62px;
+}
+
+.heading {
+    font-size: 22px;
+    line-height: 20px;
+    color: var(--heading-color);
+    display: block;
+    margin: 0 0 8px 13px;
+}
+
+.line {
+    border-color: #d4d3d1;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.adress_content {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color);
+    margin: 18px 0 0 16px;
+}
+
+.adress_line {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.adress_line:last-child {
+    margin-bottom: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.field-heading {
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--text-color);
+    margin-left: 2px;
+}
+
+.error-text {
+    display: none;
+    color: var(--button-color);
+}
+
+.error-text__visible {
+    display: inline;
+}
+
+.field-heading__name {
+    margin-top: 13px;
+}
+
+.contact-form_field {
+    font-family: var(--main-font-family);
+    font-style: italic;
+    color: var(--text-color);
+    width: 405px;
+    height: 33px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 1px #ebebeb;
+    box-shadow: inset 0 0 45.9px 8.1px rgba(0, 0, 0, 0.3);
+    margin: 7px 42px 9px 2px;
+}
+
+.contact-form_field:focus {
+    outline: none;
+    box-shadow: inset 0 0 45.9px 8.1px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form_field__message {
+    height: 123px;
+    margin-bottom: 6px;
+}
+
+.contact-form_field__error {
+    box-shadow: inset 0 0 45.9px 8.1px #b28d91;
+}
+
+.submit-button {
+    font-size: 11px;
+    line-height: 20px;
+    color: var(--button-color);
+    background: none;
+    width: 82px;
+    height: 27px;
+    box-sizing: border-box;
+    border: 1px solid;
+    align-self: flex-end;
+    margin-right: 42px;
+}
+
+.submit-button:hover {
+    background: #9c4e571a;
+}
+
+.submit-button:active,
+.submit-button:focus {
+    outline: none;
+}
+
+.submit-button:active {
+    background: none;
+}
