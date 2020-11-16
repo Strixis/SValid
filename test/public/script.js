@@ -1,3 +1,5 @@
+import { SValid } from "./svalid.js"
+
 function name(nameValue) {
   return Boolean(nameValue.match(/.+/));
 }

@@ -67,7 +67,7 @@ class SValid {
         if (typeof (settings.errors.fielddecorateclass) !== 'string') {
           throw new Error("SValid: В настройках у опции 'errors' значение 'fielddecorateclass' не соответствует 'string''!");
         }
-      } else if (Object.keys(settings).length > 3) throw new Error('SValid: В настройках что то лишнее!');
+      } else if (Object.keys(settings).length > 3) throw new Error("SValid: В настройках что то лишнее! Проверьте отсуствие опции 'errors' при 'render' со значением 'false'");
 
       if (!Object.keys(settings).includes('form')) throw new Error("SValid: В настройках нет опции 'form'!");
       if (Object.keys(settings.form).length > 2) throw new Error("SValid: В настройках у опции 'form' что то лишнее!");
@@ -183,5 +183,3 @@ class SValid {
     console.log("I'm working!");
   }
 }
-
-export { SValid };

@@ -1,0 +1,22 @@
+{
+  "name": "svalid",
+  "version": "0.0.1",
+  "description": "SValid позволяет производить валидацию формы по вашим правилам не беспокоясь о поисках элементов на странице.",
+  "main": "svalid.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Strixis/SValid.git"
+  },
+  "author": "Strixis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Strixis/SValid/issues"
+  },
+  "homepage": "https://github.com/Strixis/SValid#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
