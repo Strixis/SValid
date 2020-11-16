@@ -12,6 +12,7 @@ class SValid {
 
   init(userSettings) {
     if (!this._checkSettings(userSettings)) return;
+
     Object.assign(this._settings, userSettings);
     this._init();
   }

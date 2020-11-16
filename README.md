@@ -28,12 +28,14 @@ const dict = {
 };
 ```
 
-1. Скачать скрипт svalid.js или модуль svalid-module.js.
+1. Скачать скрипт svalid-native.js или модуль svalid.js.
 2. Подключить.
 
-  `<script src="svalid.js"></script>`
+  `<script src="your_path/svalid-native.js"></script>`
+
   или
-  `import {SValid} from "your_path/svalid-module.js"`
+  
+  `import {SValid} from "your_path/svalid.js"`
 
 3. Создать новый экземпляр класса.
 
@@ -44,7 +46,9 @@ const dict = {
   ```
   const yoursettings = {// here will be your settings};
   yourname.init(yoursettings);
+  ```
   или
+  ```
   yourname.init({// here will be your settings});
   ```
 
